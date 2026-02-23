@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "cursedclient",
+  "version": "${version}",
+  "name": "CursedClient",
+  "description": "CursedClient built-in features: custom window title, branding, and more.",
+  "authors": [
+    "Rudra"
+  ],
+  "contact": {
+    "homepage": "https://github.com/choudharyrudra"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/cursedclient/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.cursed.client.CursedClientMod"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "fabric-api": "*",
+    "minecraft": ">=1.18",
+    "java": ">=17"
+  },
+  "custom": {
+    "fabric-loom:generated": true,
+    "modmenu:hidden": true
+  }
+}
